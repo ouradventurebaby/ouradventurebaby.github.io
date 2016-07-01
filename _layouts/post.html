@@ -1,15 +1,39 @@
----
+--- 
 layout: default
+post: true
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
 
-  <div class="post-content" itemprop="articleBody">
+  <div style="background-image: url('{{ site.url }}/images/{{ page.largeImage }}'); height: 280px;" class="mdl-card__media mdl-color-text--grey-50">
+    <h3>{{ page.title }}</h3>
+  </div>
+
+  <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    <div class="minilogo"></div>
+    <div>
+      <span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      </span>
+      <strong>{{ page.author }}</strong>
+    </div>
+    <div class="section-spacer"></div>
+    <div class="meta__favorites">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </div>
+    <div>
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </div>
+    <div>
+        <i class="material-icons" role="presentation">share</i>
+        <span class="visuallyhidden">share</span>
+    </div>
+  </div>
+
+  <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
     {{ content }}
   </div>
 
-</article>
+</div>

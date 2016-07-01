@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+<body>
+  <div class="demo-blog {% if layout.post %}demo-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <main class="mdl-layout__content">
+      <div class="demo-blog__posts mdl-grid">
         {{ content }}
       </div>
-    </div>
+    </main>
+  </div>
 
-    {% include footer.html %}
-
-  </body>
+</body>
 
 </html>
