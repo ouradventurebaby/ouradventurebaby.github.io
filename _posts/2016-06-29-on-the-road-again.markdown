@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "On The Road Again"
-description: "Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod..."
-date: 2016-06-29
-image: road.jpg
+title: On The Road Again
+description: >-
+  Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit
+  elit. Velit anim eiusmod...
+date: 2016-06-29T00:00:00.000Z
+image: post1.jpg
 largeImage: road_big.jpg
 author: Brandy Fine
+published: true
 ---
 
 Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
