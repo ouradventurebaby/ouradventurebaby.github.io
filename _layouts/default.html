@@ -6,6 +6,13 @@
 <body>
   <div class="demo-blog {% if layout.post %}demo-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
+      <!--{% if layout.post %}
+      <div class="demo-back">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ paginator.previous_page_path }}" title="go back" role="button">
+          <i class="material-icons" role="presentation">arrow_back</i>
+        </a>
+      </div>
+      {% endif %}-->
       <div class="demo-blog__posts mdl-grid">
         {{ content }}
       </div>
