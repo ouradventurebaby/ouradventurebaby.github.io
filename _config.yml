@@ -21,7 +21,7 @@ highlighter: null
 
 paginate_path: "blog/page:num/"
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 2
 
 # Build settings
 markdown: kramdown
