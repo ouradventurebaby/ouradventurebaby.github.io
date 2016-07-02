@@ -1,9 +1,7 @@
 ---
 layout: post
 title: On The Road Again
-description: >-
-  Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit
-  elit. Velit anim eiusmod...
+description: Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod...
 date: 2016-06-29T00:00:00.000Z
 image: post1.jpg
 largeImage: road_big.jpg
