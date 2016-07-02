@@ -1,12 +1,12 @@
 ---
 layout: post
 title: We made an offer on a motorhome today!
-description:
+description: >-
   In true Brandy fashion, I procrastinated starting this blog.  I guess I was
   never really sure until now that our adventure was going to happen.  I want to
   give some back story but I think that will have to have to be another post at
   another time.
-date: 2016-06-27
+date: 2016-06-27T00:00:00.000Z
 image: post1.jpg
 largeImage: road_big.jpg
 author: Brandy Fine
