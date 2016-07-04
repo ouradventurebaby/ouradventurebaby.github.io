@@ -1,0 +1,6 @@
+
+add Facebook Comments and/or disqus
+optimize the background pic
+DONE - see why jQuery is being used and take it out if I can - there is no jQuery
+
+find a decent markdown editor and gitUI for publishing (maybe)
