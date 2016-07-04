@@ -11,7 +11,8 @@ email: clay.schick@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Our adventure living and traveling in a motorhome.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ouradventurebaby.github.io" # the base hostname & protocol for your site
+#url: "https://ouradventurebaby.github.io" # the base hostname & protocol for your site
+url: "http://localhost:4000" 
 twitter_username: brandyfine
 github_username:  brandyfine
 
