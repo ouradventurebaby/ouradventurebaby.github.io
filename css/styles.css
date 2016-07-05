@@ -18,7 +18,7 @@ body::before {
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('{{ site.url }}/images/bg_1024.jpg');
+    background-image: url('{{ site.url }}/images/backgroud1-large.jpeg');
   }
 }
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -26,7 +26,7 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('{{ site.url }}/images/bg_2048.jpg');
+    background-image: url('{{ site.url }}/images/backgroud1-large.jpeg');
   }
 }
 @media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -365,9 +365,9 @@ body .demo-blog {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .demo-blog--blogpost .comments .comment > .comment__header {
   display: -webkit-flex;
