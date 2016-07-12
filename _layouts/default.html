@@ -13,18 +13,30 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   
-  <img class="background" src="{{ site.url }}/images/backgroud1-640x960.jpeg" srcset="{{ site.url }}/images/backgroud1-1440x900.jpeg 1024w, {{ site.url }}/images/backgroud1-1920x1080.jpeg 2048w">
+  <picture>
+    <source 
+      srcset="{{ site.url }}/images/background/small/background2-crop-640x480-70.webp 640w,
+        {{ site.url }}/images/background/medium/background2-crop-1024x768-70.webp 1024w,
+        {{ site.url }}/images/background/large/background2-crop-1920x1080-70.webp 1920w"
+      type="image/webp">
+    <img class="background" 
+      src="{{ site.url }}/images/background/medium/background2-crop-1024x768-70.jpeg" 
+      srcset="{{ site.url }}/images/background/small/background2-crop-640x480-70.jpeg 640w, 
+        {{ site.url }}/images/background/medium/background2-crop-1024x768-70.jpeg 1024w,
+        {{ site.url }}/images/background/large/background2-crop-1920x1080-70.jpeg 1920w"
+      sizes="100vw">
+  </picture>
 
-  <div class="demo-blog {% if layout.post %}demo-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
+  <div class="oab-blog {% if layout.post %}oab-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
       <!--{% if layout.post %}
-      <div class="demo-back">
+      <div class="oab-back">
         <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ paginator.previous_page_path }}" title="go back" role="button">
           <i class="material-icons" role="presentation">arrow_back</i>
         </a>
       </div>
       {% endif %}-->
-      <div class="demo-blog__posts mdl-grid">
+      <div class="oab-blog__posts mdl-grid">
         {{ content }}
       </div>
     </main>

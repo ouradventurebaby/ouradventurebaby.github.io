@@ -5,7 +5,7 @@ layout: default
 {% for post in paginator.posts %}
 <div class="mdl-card mdl-cell mdl-cell--12-col">
   <a href="{{ post.url | prepend: site.baseurl }}">
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('{{ site.url }}/images/{{ post.largeImage }}'); height: 200px;">
+    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('{{ site.url }}/images/posts/{{ post.image }}'); height: 200px;">
       <h3>{{ post.title }}</h3>
     </div>
   </a>
@@ -22,9 +22,9 @@ layout: default
 {% endfor %}
 
 <!-- Pagination links -->
-<nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+<nav class="oab-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="demo-nav__button previous">
+  <a href="{{ paginator.previous_page_path }}" class="oab-nav__button previous">
     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
       <i class="material-icons">arrow_back</i>
     </button>
@@ -33,7 +33,7 @@ layout: default
   {% endif %}
   <div class="section-spacer"></div>
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="demo-nav__button">
+  <a href="{{ paginator.next_page_path }}" class="oab-nav__button">
     {% if paginator.previous_page %}Older{% else %}More{% endif %}
     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
       <i class="material-icons">arrow_forward</i>
