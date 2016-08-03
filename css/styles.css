@@ -59,6 +59,19 @@ body .oab-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
+.oab-blog .oab-blog__title {
+  margin: 88px 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.oab-blog .oab-blog__title h1, h4 {
+  margin: 0;
+}
+
 .oab-blog .oab-blog__posts {
   max-width: 900px;
   padding: 0;
@@ -73,7 +86,7 @@ body .oab-blog {
 }
 
 .oab-blog.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  /*padding-top: 230px;*/
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -125,7 +138,10 @@ body .oab-blog {
 .oab-blog .mdl-card__supporting-text {
   width: 100%;
   padding: 16px;
+  /*max-width: 512px;*/
   min-height: 64px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -168,8 +184,8 @@ body .oab-blog {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  /*-webkit-align-items: center;*/
+  /*-ms-flex-align: center;*/
   align-items: center;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -346,16 +362,20 @@ body .oab-blog {
   background-color: transparent;
 }
 
+.oab-blog--blogpost .content {
+
+}
+
 .oab-blog--blogpost .comments {
   background-color: #EEE;
 }
 
-.oab-blog--blogpost .meta > * {
+/*.oab-blog--blogpost .meta > * {
   -webkit-align-items: center;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
-}
+}*/
 
 .oab-blog--blogpost .meta + .mdl-card__supporting-text {
   border: 0;
@@ -370,8 +390,10 @@ body .oab-blog {
 .oab-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
+  /*margin-top: 16px;*/
+  /*margin-bottom: 16px;*/
   font-size: 16px;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 .oab-blog--blogpost .comments {
@@ -530,10 +552,10 @@ body .oab-blog {
 .oab-blog .minilogo {
   width: 44px;
   height: 44px;
-  background-image: url('{{ site.url }}/images/avatar.png');
+  /*background-image: url('{{ site.url }}/images/avatar.png');*/
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 100%;
   border-radius: 22px;
   background-color: #F5F5F5;
 }

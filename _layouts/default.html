@@ -29,14 +29,18 @@
 
   <div class="oab-blog {% if layout.post %}oab-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
-      <!--{% if layout.post %}
+      {% if layout.post %}
       <div class="oab-back">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ paginator.previous_page_path }}" title="go back" role="button">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ site.url }}" title="go back" role="button">
           <i class="material-icons" role="presentation">arrow_back</i>
         </a>
       </div>
-      {% endif %}-->
+      {% endif %}
       <div class="oab-blog__posts mdl-grid">
+        <div class="oab-blog__title mdl-cell--12-col">
+          <h1>Our Adventure, Baby!</h1>
+          <h4>Hitting the road in our RV.</h3>
+        </div>       
         {{ content }}
       </div>
     </main>

@@ -5,40 +5,42 @@ post: true
 
 <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
 
-  <div style="background-image: url('{{ site.url }}/images/posts/{{ page.image }}'); height: 280px;" class="mdl-card__media mdl-color-text--grey-50">
-    <h3>{{ page.title }}</h3>
+  <div style="background-image: url('{{site.url}}/images/posts/{{page.image}}'); height: 280px;" class="mdl-card__media mdl-color-text--grey-50">
+    <h3>{{page.title}}</h3>
   </div>
 
   <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-    <div class="minilogo"></div>
+    <div style="background-image: url('{{ site.url }}/images/{{ page.avatar }}');" class="minilogo"></div>
     <div>
       <span>
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
       </span>
-      <strong>{{ page.author }}</strong>
+      <strong>{{page.author}}</strong>
     </div>
     <div class="section-spacer"></div>
-    <div class="meta__favorites">
+    <!--<div class="meta__favorites">
         <i class="material-icons" role="presentation">favorite</i>
         <span class="visuallyhidden">favorites</span>
-    </div>
-    <div>
+    </div>-->
+    <!--<div>
         <i class="material-icons" role="presentation">bookmark</i>
         <span class="visuallyhidden">bookmark</span>
-    </div>
-    <div>
+    </div>-->
+    <!--<div>
         <i class="material-icons" role="presentation">share</i>
         <span class="visuallyhidden">share</span>
-    </div>
+    </div>-->
   </div>
 
   <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+    <div class="content">
     {{ content }}
+    </div>
   </div>
 
   <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
     <div class="comment mdl-color-text--grey-700">
-      <div class="fb-comments" data-href="http://ouradventurebaby.com" data-width="512px" data-numposts="10"></div>
+      <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="512px" data-numposts="10"></div>
     </div>
   </div>
 

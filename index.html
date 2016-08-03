@@ -13,9 +13,10 @@ layout: default
     {{ post.description }}
   </div>
   <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-    <div class="minilogo"></div>
+    <div style="background-image: url('{{ site.url }}/images/{{ post.avatar }}');" class="minilogo"></div>
     <div>
       <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <strong>{{post.author}}</strong>
     </div>
   </div>
 </div>
