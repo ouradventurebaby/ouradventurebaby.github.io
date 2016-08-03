@@ -527,7 +527,7 @@ body .oab-blog {
 }
 
 .oab-blog--blogpost .oab-back {
-  position: absolute;
+  position: fixed;
   top: 16px;
   left: 16px;
   color: white;
