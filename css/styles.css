@@ -69,7 +69,7 @@ body .oab-blog {
 }
 
 .oab-blog .oab-blog__title h1, h4 {
-  margin: 0;
+  margin: 16px;
 }
 
 .oab-blog .oab-blog__posts {
@@ -527,7 +527,7 @@ body .oab-blog {
 }
 
 .oab-blog--blogpost .oab-back {
-  position: fixed;
+  position: absolute;
   top: 16px;
   left: 16px;
   color: white;
