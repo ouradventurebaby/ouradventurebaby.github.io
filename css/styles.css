@@ -68,8 +68,8 @@ body .oab-blog {
   color: white;
 }
 
-.oab-blog .oab-blog__title h1, h4 {
-  margin: 16px;
+.oab-blog .oab-blog__title h1, h3 {
+  margin: 8px;
 }
 
 .oab-blog .oab-blog__posts {
@@ -362,8 +362,8 @@ body .oab-blog {
   background-color: transparent;
 }
 
-.oab-blog--blogpost .content {
-
+.oab-blog__post {
+  margin-top: 64px;
 }
 
 .oab-blog--blogpost .comments {
