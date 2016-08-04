@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Our adventure living and traveling in a motorhome.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ouradventurebaby.com" # the base hostname & protocol for your site
-#url: "http://localhost:4000" 
+#url: "http://192.168.1.196:4000" 
 twitter_username: brandyfine
 github_username:  brandyfine
 

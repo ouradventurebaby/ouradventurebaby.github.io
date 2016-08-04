@@ -55,6 +55,17 @@ body .background {
   left: 0;
 }
 
+.subscribe {
+  position: fixed;
+  bottom: 0%;
+  right: 2%;
+  background: rgba(158,158,158,1.0);
+}
+
+.subscribe a {
+  text-decoration: inherit;
+}
+
 body .oab-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -62,8 +73,10 @@ body .oab-blog {
 .oab-blog .oab-blog__title {
   margin: 88px 0;
   display: flex;
-  display: -webkit-flex;
+  /*display: -webkit-flex;*/
+  display: -ms-flexbox;
   flex-direction: column;
+  -ms-flex-direction: column;
   align-items: center;
   color: white;
 }
@@ -458,9 +471,9 @@ body .oab-blog {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  /*-webkit-align-items: center;*/
+  /*-ms-flex-align: center;*/
+  /*align-items: center;*/
 }
 
 .oab-blog--blogpost .comments .comment > .comment__header {

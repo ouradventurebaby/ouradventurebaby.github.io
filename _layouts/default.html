@@ -7,6 +7,7 @@ post: false
 {% include head.html %}
 
 <body>
+  <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -30,6 +31,11 @@ post: false
       sizes="100vw">
   </picture>
 
+  <button class="mdl-button mdl-js-button mdl-button--raised subscribe">
+    <a href="http://eepurl.com/capo_H">Subscribe</a>
+  </button>
+
+
   <div class="oab-blog {% if layout.post %}oab-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
 
@@ -43,10 +49,11 @@ post: false
       {% endif %}
 
       <div class="oab-blog__posts mdl-grid">
+
         {% if layout.post == false %}
-        <div class="oab-blog__title">
-          <h1 class="mdl-cell mdl-cell--12-col">Our Adventure, Baby!</h1>
-          <h3 class="mdl-cell mdl-cell--12-col">Hitting the road in our RV.</h3>
+        <div class="oab-blog__title mdl-cell mdl-cell--12-col">
+          <h1>Our Adventure, Baby!</h1>
+          <h3>Hitting the road in our RV.</h3>
         </div>
         {% endif %}
 
