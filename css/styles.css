@@ -1,4 +1,4 @@
---- --- body::before {
+/*--- --- body::before {
   background-size: cover;
   background-attachment: fixed;
   content: '';
@@ -9,7 +9,7 @@
   bottom: 0;
   top: 0;
   position: fixed;
-}
+}*/
 
 
 /*@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
@@ -60,6 +60,7 @@ body .background {
   bottom: 0%;
   right: 2%;
   background: rgba(158,158,158,1.0);
+  z-index: 10;
 }
 
 .subscribe a {

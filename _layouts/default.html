@@ -31,10 +31,9 @@ post: false
       sizes="100vw">
   </picture>
 
-  <button class="mdl-button mdl-js-button mdl-button--raised subscribe">
-    <a href="http://eepurl.com/capo_H">Subscribe</a>
-  </button>
-
+  <!--<button class="mdl-button mdl-js-button mdl-button--raised subscribe">
+    <a href="http://eepurl.com/capo_H">Follow</a>
+  </button>-->
 
   <div class="oab-blog {% if layout.post %}oab-blog--blogpost{% endif %} mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
@@ -59,6 +58,9 @@ post: false
 
         {{ content }}
       </div>
+
+      {% include footer.html %}
+
     </main>
   </div>
 
