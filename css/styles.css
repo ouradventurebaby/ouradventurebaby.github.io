@@ -12,14 +12,20 @@
 }*/
 
 
-/*@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
+@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
-  body::before {
+  /*body::before {
     background-image: url('{{ site.url }}/images/backgroud1-small.jpeg');
+  }*/
+  .subscription-button {
+    display: inline-block !important;
   }
-}*/
+  .subscription-form {
+    display: none !important;
+  }
+}
 
 
 /*@media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -623,4 +629,18 @@ body .oab-blog {
   align-items: center;
   background-color: white;
   box-sizing: border-box;
+}
+
+.subscription-form {
+
+}
+
+.subscription-button {
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+}
+
+.subscription-button i {
+  margin-right: 10px;
 }
