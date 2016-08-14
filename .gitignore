@@ -2,4 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 
+_posts/template.md
+
 .DS_Store
